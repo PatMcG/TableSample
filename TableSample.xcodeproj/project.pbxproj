@@ -13,6 +13,12 @@
 		CDE29EC81C10D7D4009100FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE29EC61C10D7D4009100FD /* Main.storyboard */; };
 		CDE29ECA1C10D7D4009100FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE29EC91C10D7D4009100FD /* Assets.xcassets */; };
 		CDE29ECD1C10D7D4009100FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE29ECB1C10D7D4009100FD /* LaunchScreen.storyboard */; };
+		CDE29ED61C10DE3C009100FD /* PersonAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE29ED51C10DE3C009100FD /* PersonAPIManager.m */; };
+		CDE29ED91C10DE6C009100FD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE29ED81C10DE6C009100FD /* Person.m */; };
+		CDE29EDC1C10DF31009100FD /* Person+ParsePersonDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE29EDB1C10DF31009100FD /* Person+ParsePersonDetails.m */; };
+		CDE29EDF1C10E07B009100FD /* PersonTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE29EDE1C10E07B009100FD /* PersonTableViewDataSource.m */; };
+		CDE29EE21C10E10D009100FD /* PersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE29EE11C10E10D009100FD /* PersonTableViewCell.m */; };
+		CDE29EE51C10E149009100FD /* PersonTableViewCell+LayoutPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE29EE41C10E149009100FD /* PersonTableViewCell+LayoutPersonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		CDE29EC91C10D7D4009100FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE29ECC1C10D7D4009100FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDE29ECE1C10D7D4009100FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE29ED41C10DE3C009100FD /* PersonAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAPIManager.h; sourceTree = "<group>"; };
+		CDE29ED51C10DE3C009100FD /* PersonAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAPIManager.m; sourceTree = "<group>"; };
+		CDE29ED71C10DE6C009100FD /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CDE29ED81C10DE6C009100FD /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CDE29EDA1C10DF31009100FD /* Person+ParsePersonDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+ParsePersonDetails.h"; sourceTree = "<group>"; };
+		CDE29EDB1C10DF31009100FD /* Person+ParsePersonDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+ParsePersonDetails.m"; sourceTree = "<group>"; };
+		CDE29EDD1C10E07B009100FD /* PersonTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTableViewDataSource.h; sourceTree = "<group>"; };
+		CDE29EDE1C10E07B009100FD /* PersonTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewDataSource.m; sourceTree = "<group>"; };
+		CDE29EE01C10E10D009100FD /* PersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTableViewCell.h; sourceTree = "<group>"; };
+		CDE29EE11C10E10D009100FD /* PersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewCell.m; sourceTree = "<group>"; };
+		CDE29EE31C10E149009100FD /* PersonTableViewCell+LayoutPersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PersonTableViewCell+LayoutPersonCell.h"; sourceTree = "<group>"; };
+		CDE29EE41C10E149009100FD /* PersonTableViewCell+LayoutPersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PersonTableViewCell+LayoutPersonCell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +78,20 @@
 			children = (
 				CDE29EC01C10D7D3009100FD /* AppDelegate.h */,
 				CDE29EC11C10D7D3009100FD /* AppDelegate.m */,
+				CDE29EE01C10E10D009100FD /* PersonTableViewCell.h */,
+				CDE29EE11C10E10D009100FD /* PersonTableViewCell.m */,
+				CDE29EE31C10E149009100FD /* PersonTableViewCell+LayoutPersonCell.h */,
+				CDE29EE41C10E149009100FD /* PersonTableViewCell+LayoutPersonCell.m */,
+				CDE29EDD1C10E07B009100FD /* PersonTableViewDataSource.h */,
+				CDE29EDE1C10E07B009100FD /* PersonTableViewDataSource.m */,
 				CDE29EC31C10D7D3009100FD /* ViewController.h */,
 				CDE29EC41C10D7D3009100FD /* ViewController.m */,
+				CDE29ED71C10DE6C009100FD /* Person.h */,
+				CDE29ED81C10DE6C009100FD /* Person.m */,
+				CDE29EDA1C10DF31009100FD /* Person+ParsePersonDetails.h */,
+				CDE29EDB1C10DF31009100FD /* Person+ParsePersonDetails.m */,
+				CDE29ED41C10DE3C009100FD /* PersonAPIManager.h */,
+				CDE29ED51C10DE3C009100FD /* PersonAPIManager.m */,
 				CDE29EC61C10D7D4009100FD /* Main.storyboard */,
 				CDE29EC91C10D7D4009100FD /* Assets.xcassets */,
 				CDE29ECB1C10D7D4009100FD /* LaunchScreen.storyboard */,
@@ -151,7 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE29EC51C10D7D3009100FD /* ViewController.m in Sources */,
+				CDE29EDF1C10E07B009100FD /* PersonTableViewDataSource.m in Sources */,
+				CDE29EE21C10E10D009100FD /* PersonTableViewCell.m in Sources */,
+				CDE29ED61C10DE3C009100FD /* PersonAPIManager.m in Sources */,
+				CDE29ED91C10DE6C009100FD /* Person.m in Sources */,
+				CDE29EE51C10E149009100FD /* PersonTableViewCell+LayoutPersonCell.m in Sources */,
 				CDE29EC21C10D7D3009100FD /* AppDelegate.m in Sources */,
+				CDE29EDC1C10DF31009100FD /* Person+ParsePersonDetails.m in Sources */,
 				CDE29EBF1C10D7D3009100FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

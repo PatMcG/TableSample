@@ -31,33 +31,50 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok2-7B-x70">
-                                                    <rect key="frame" x="10" y="5" width="37" height="21"/>
+                                                    <rect key="frame" x="10" y="5" width="48" height="27"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uif-NS-R3D">
+                                                    <rect key="frame" x="10" y="77" width="35" height="17"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4F-Qa-PyF">
-                                                    <rect key="frame" x="18" y="31" width="37" height="60"/>
+                                                    <rect key="frame" x="18" y="37" width="43" height="35"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <animations/>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="uif-NS-R3D" secondAttribute="trailing" constant="20" id="4yQ-AN-MjF"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="I4F-Qa-PyF" secondAttribute="bottom" constant="5" id="9Nq-7e-pHV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uif-NS-R3D" secondAttribute="bottom" constant="2" id="CCC-GI-Wmm"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="I4F-Qa-PyF" secondAttribute="trailing" constant="10" id="D5L-tu-8R2"/>
                                                 <constraint firstItem="I4F-Qa-PyF" firstAttribute="leading" secondItem="tGD-qe-p9h" secondAttribute="leadingMargin" constant="10" id="EiC-ca-LYj"/>
+                                                <constraint firstItem="uif-NS-R3D" firstAttribute="leading" secondItem="tGD-qe-p9h" secondAttribute="leadingMargin" constant="2" id="FA7-1k-6I1"/>
                                                 <constraint firstItem="ok2-7B-x70" firstAttribute="top" secondItem="tGD-qe-p9h" secondAttribute="top" constant="5" id="KYf-fF-h2e"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ok2-7B-x70" secondAttribute="trailing" constant="10" id="QmM-ca-sJ9"/>
+                                                <constraint firstItem="uif-NS-R3D" firstAttribute="top" secondItem="I4F-Qa-PyF" secondAttribute="bottom" constant="5" id="YZB-Rx-RrK"/>
                                                 <constraint firstItem="ok2-7B-x70" firstAttribute="leading" secondItem="tGD-qe-p9h" secondAttribute="leading" constant="10" id="k17-wi-e3n"/>
                                                 <constraint firstItem="I4F-Qa-PyF" firstAttribute="top" secondItem="ok2-7B-x70" secondAttribute="bottom" constant="5" id="oCy-q7-KzP"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="9Nq-7e-pHV"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
+                                            <outlet property="activeLabel" destination="uif-NS-R3D" id="qfl-qQ-0Kq"/>
                                             <outlet property="nameLabel" destination="ok2-7B-x70" id="ELR-sA-6YG"/>
                                             <outlet property="phoneLabel" destination="I4F-Qa-PyF" id="7wW-Yc-TQh"/>
                                         </connections>

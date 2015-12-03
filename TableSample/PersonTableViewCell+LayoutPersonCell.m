@@ -14,6 +14,9 @@
 {
     self.nameLabel.text = person.name;
     self.phoneLabel.text = person.phoneNumber;
+    
+    if(person.isActive == YES) self.activeLabel.textColor = [UIColor greenColor];
+
 }
 
 

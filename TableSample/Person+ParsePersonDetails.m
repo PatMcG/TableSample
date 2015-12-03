@@ -34,7 +34,7 @@
     person.phoneNumber = dictionary[@"phone"];
     person.about = dictionary[@"about"];
     person.address = dictionary[@"address"];
-    person.isActive = dictionary[@"isActive"];
+    person.isActive = [dictionary[@"isActive"] boolValue];
     
     return person;
 }
